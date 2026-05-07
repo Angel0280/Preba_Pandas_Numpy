@@ -85,3 +85,29 @@ print("Undécimo Inciso:")
 precio_promedio = df.groupby(['marca', 'tipo_combustible'])['precio'].mean()
 print(precio_promedio)
 
+#Duodécimo inciso
+print("Duodécimo Inciso:")
+
+#Decimotercer inciso
+print("Decimotercer Inciso:")
+
+#Decimocuarto inciso
+print("Decimocuarto Inciso:")
+
+#Decimoquinto inciso
+print("Decimoquinto Inciso:")
+
+#Decimosexto inciso
+print("Decimosexto Inciso:")
+
+#Decimoséptimo inciso
+print("Decimoséptimo Inciso:")
+
+#Decimoctavo inciso
+print("Decimoctavo Inciso:")
+
+#Decimonoveno inciso
+print("Decimonoveno Inciso:")
+
+#Bigésimo inciso
+print("Bigésimo Inciso:")
