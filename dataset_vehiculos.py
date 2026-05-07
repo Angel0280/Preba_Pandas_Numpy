@@ -47,4 +47,19 @@ print(df.describe())
 
 #Cuarto inciso
 print("Cuarto Inciso:")
+filtro = df[df['precio'] < 350000]
+print(filtro)
+
+#Quinto inciso
+print("Quinto Inciso:")
+subconjunto = df.loc[df['marca'] == 'Toyota', ['id_vehiculo', 'año', 'precio']]
+print(subconjunto)
+
+#Sexto inciso
+print("Sexto Inciso:")
+subconjunto_loc = df.loc[0:9, ['id_vehiculo', 'marca', 'modelo']]
+print(subconjunto_loc)
+
+#Septimo inciso
+
 
