@@ -1,5 +1,8 @@
 import pandas as pd
 import random
+import os 
+
+os.system("clear")
 
 random.seed(42)
 
@@ -26,9 +29,11 @@ df = pd.DataFrame({
 #Eficiencia de consumo: Ciudad y Carretera
 
 # Primer inciso
-#print(df)
+print("Primer Inciso:")
+print(df)
 
 # Segundo inciso
+print("Segundo Inciso:")
 dimensiones = df.shape
 print(f"Dimensiones: {dimensiones}")
 columnas = df.columns
@@ -37,4 +42,9 @@ tipo_datos = df.dtypes
 print("Tipos de datos: {}".format(tipo_datos))
 
 #Tercer inciso
+print("Tercer Inciso:")
+print(df.describe())
+
+#Cuarto inciso
+print("Cuarto Inciso:")
 
