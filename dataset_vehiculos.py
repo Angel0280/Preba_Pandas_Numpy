@@ -87,9 +87,13 @@ print(precio_promedio)
 
 #Duodécimo inciso
 print("Duodécimo Inciso:")
+agrupacion = df.groupby(['marca', 'modelo', 'año'])['precio'].mean()
+print(agrupacion)
 
 #Decimotercer inciso
 print("Decimotercer Inciso:")
+categoria_de_precio = pd.cut(df['precio'], bins=[0, 250000, 500000, 750000], labels=['Económico', 'Medio', 'Alto'])
+print(categoria_de_precio.value_counts())
 
 #Decimocuarto inciso
 print("Decimocuarto Inciso:")
