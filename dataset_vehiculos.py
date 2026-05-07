@@ -23,3 +23,18 @@ df = pd.DataFrame({
     'consumo_ciudad': [round(random.uniform(8.0, 25.0), 1) for _ in range(n)],
     'consumo_carretera': [round(random.uniform(6.0, 20.0), 1) for _ in range(n)]
 })
+#Eficiencia de consumo: Ciudad y Carretera
+
+# Primer inciso
+#print(df)
+
+# Segundo inciso
+dimensiones = df.shape
+print(f"Dimensiones: {dimensiones}")
+columnas = df.columns
+print(f"Columnas: {columnas}")
+tipo_datos = df.dtypes
+print("Tipos de datos: {}".format(tipo_datos))
+
+#Tercer inciso
+
