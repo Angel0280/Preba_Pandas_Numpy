@@ -61,5 +61,21 @@ subconjunto_loc = df.loc[0:9, ['id_vehiculo', 'marca', 'modelo']]
 print(subconjunto_loc)
 
 #Septimo inciso
+print("Séptimo Inciso:")
+promedio = df['precio'].mean()
+print(f"Precio promedio: {promedio}")
 
+#Octavo inciso
+print("Octavo Inciso:")
+df['eficiencia_consumo'] = df['consumo_ciudad'] / df['consumo_carretera']
+print(df[['marca', 'eficiencia_consumo']])
 
+#Noveno inciso
+print("Noveno Inciso:")
+vehiculos_caros = df.sort_values(by='precio').head(5)
+print(vehiculos_caros)
+
+#Décimo inciso
+print("Décimo Inciso:")
+conteo_por_marcas = df['marca'].value_counts()
+print(conteo_por_marcas)
