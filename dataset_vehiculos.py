@@ -79,3 +79,9 @@ print(vehiculos_caros)
 print("Décimo Inciso:")
 conteo_por_marcas = df['marca'].value_counts()
 print(conteo_por_marcas)
+
+#Undécimo inciso
+print("Undécimo Inciso:")
+precio_promedio = df.groupby(['marca', 'tipo_combustible'])['precio'].mean()
+print(precio_promedio)
+
